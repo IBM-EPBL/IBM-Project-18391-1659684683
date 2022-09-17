@@ -28,4 +28,8 @@
 - Minimal animations to give better UX.
 - Creating a cool grid based design.
 
----
+# Selected 3 IDEA
+
+- Creating an Interactive Dashboard.
+- Responsive Design for every screen sizes.
+- Manual Insights for each interaction.
