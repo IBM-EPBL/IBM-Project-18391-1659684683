@@ -33,3 +33,7 @@
 - Creating an Interactive Dashboard.
 - Responsive Design for every screen sizes.
 - Manual Insights for each interaction.
+
+# Priority map
+
+![priority map](./Priority%20chart.png)
