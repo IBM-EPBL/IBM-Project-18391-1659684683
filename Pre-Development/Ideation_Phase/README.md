@@ -47,8 +47,6 @@ A single platform that would allow anyone to easily connect disparate data sourc
 
 - This map is created with view of the project in user's perspective, to find pain & gain points and to summarize it with a list of problem statements.
 
-![empathy map](./Empathy_map/EmpathyMap_ver1.png)
-
 ### Derived Problem Statements
 
 - Create a simple easy to understand analytics of Sales data, by plotting different visualization.
