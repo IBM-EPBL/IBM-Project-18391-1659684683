@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Story</title>
+<link rel="stylesheet" href="{{url_for('static',filename='css/story.css')}}">
+{% endblock %}
+
+{% block body %}
+<div class="main-container">
+  <div class="mt-3">
+  <div>
+    <iframe src="https://us1.ca.analytics.ibm.com/bi/?perspective=story&amp;pathRef=.public_folders%2FDevelopment%2BPhase%2FStory%253A%2BGlobalSales%2BDash&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;sceneId=model000001848e3f9eb9_00000000&amp;sceneTime=0" width="1280" height="900" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>
+  </div>
+  <div class="sub-container quote m-3">
+    <h3>Programmer Jokes API</h3>
+    <p id="joke">
+      
+    </p>
+  </div>
+</div>
+<script>
+  async function joke() {
+    await fetch("https://v2.jokeapi.dev/joke/Programming?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single", {
+      method: "GET",
+    }).then(async (res) => { 
+      let t= await res.json();
+      document.getElementById('joke').innerHTML=t.joke
+    }).catch((err) => { console.log(err) })
+  }
+  joke();
+</script>
+{% endblock %}
